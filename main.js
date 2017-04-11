@@ -1,3 +1,5 @@
+
+var newItemcounter=1;
 var unlis=document.getElementById("list");
 var ourbutton=document.getElementById("blue");
 var ourheading=document.getElementById("heading");
@@ -15,5 +17,6 @@ for(i=0; i<ourlist.length; i++)
 	
 	function createNewItem()
 	{
-		unlis.innerHTML +="<li>something new</li>";
+		unlis.innerHTML +="<li>something new " + newItemcounter+"</li>";
+		newItemcounter++;
 	}
